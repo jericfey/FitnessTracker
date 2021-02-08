@@ -1,0 +1,126 @@
+[
+{
+    "_id" : ObjectId("602090faf4fc7d9c2973b1ac"),
+    "day" : 1611883002369.0,
+    "exercises" : [ 
+        {
+            "type" : "resistance",
+            "name" : "Bicep Curl",
+            "duration" : 20,
+            "weight" : 100,
+            "reps" : 10,
+            "sets" : 4
+        }
+    ]
+},
+{
+    "_id" : ObjectId("602090faf4fc7d9c2973b1ad"),
+    "day" : 1611969402371.0,
+    "exercises" : [ 
+        {
+            "type" : "resistance",
+            "name" : "Lateral Pull",
+            "duration" : 20,
+            "weight" : 300,
+            "reps" : 10,
+            "sets" : 4
+        }
+    ]
+},
+{
+    "_id" : ObjectId("602090faf4fc7d9c2973b1ae"),
+    "day" : 1612055802371.0,
+    "exercises" : [ 
+        {
+            "type" : "resistance",
+            "name" : "Push Press",
+            "duration" : 25,
+            "weight" : 185,
+            "reps" : 8,
+            "sets" : 4
+        }
+    ]
+},
+{
+    "_id" : ObjectId("602090faf4fc7d9c2973b1af"),
+    "day" : 1612142202371.0,
+    "exercises" : [ 
+        {
+            "type" : "cardio",
+            "name" : "Running",
+            "duration" : 25,
+            "distance" : 4
+        }
+    ]
+},
+{
+    "_id" : ObjectId("602090faf4fc7d9c2973b1b0"),
+    "day" : 1612228602371.0,
+    "exercises" : [ 
+        {
+            "type" : "resistance",
+            "name" : "Bench Press",
+            "duration" : 20,
+            "weight" : 285,
+            "reps" : 10,
+            "sets" : 4
+        }
+    ]
+},
+{
+    "_id" : ObjectId("602090faf4fc7d9c2973b1b1"),
+    "day" : 1612315002371.0,
+    "exercises" : [ 
+        {
+            "type" : "resistance",
+            "name" : "Bench Press",
+            "duration" : 20,
+            "weight" : 300,
+            "reps" : 10,
+            "sets" : 4
+        }
+    ]
+},
+{
+    "_id" : ObjectId("602090faf4fc7d9c2973b1b2"),
+    "day" : ISODate("2021-02-04T01:16:42.371Z"),
+    "exercises" : [ 
+        {
+            "type" : "resistance",
+            "name" : "Quad Press",
+            "duration" : 30,
+            "weight" : 300,
+            "reps" : 10,
+            "sets" : 4
+        }
+    ]
+},
+{
+    "_id" : ObjectId("602090faf4fc7d9c2973b1b3"),
+    "day" : ISODate("2021-02-05T01:16:42.371Z"),
+    "exercises" : [ 
+        {
+            "type" : "resistance",
+            "name" : "Bench Press",
+            "duration" : 20,
+            "weight" : 300,
+            "reps" : 10,
+            "sets" : 4
+        }
+    ]
+},
+{
+    "_id" : ObjectId("602090faf4fc7d9c2973b1b4"),
+    "day" : ISODate("2021-02-06T01:16:42.371Z"),
+    "exercises" : [ 
+        {
+            "type" : "resistance",
+            "name" : "Military Press",
+            "duration" : 20,
+            "weight" : 300,
+            "reps" : 10,
+            "sets" : 4
+        }
+    ]
+}
+]
