@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const Workout = require("../models/workout.js");
 
+
 //Get last workout
 router.get("/api/workout", (req, res) => {
   Workout.find({})
