@@ -4,8 +4,7 @@ const Workout = require("../models/workout.js");
 
 //Get last workout
 router.get("/api/workout", (req, res) => {
-  Workout.find({})
-    .sort({ date: -1 })
+  Workout.find({ })
     .then((dbWorkout) => {
       res.json(dbWorkout);
     })
