@@ -20,74 +20,24 @@ const findAll = (req, res) => {
 };
 
 const create = ({ body }, res) => {
+  console.log("Body Object:", body);
   Workout.create({})
     .then((data) => goodResponse(data, res))
     .catch((err) => badResponse(err, res));
 };
 
-//* add routes for ../public api.js
-
-// //* getLastWorkout()
-// router.get("/api/workouts", (req, res) => {
-//   db.Workout.find({})
-//     .then((data) => {
-//       res.json(data);
-//       console.log(data);
-//     })
-//     .catch((err) => {
-//       res.json(err);
-//     });
-// });
-
-// //* addExercise()
-// router.put("/workouts/:id", ({ params, body }, res) => {
-//   console.log(body);
-//   db.Workout.findByIdAndUpdate(
-//     params.id,
-//     {
-//       $push: {
-//         exercises: body,
-//       },
-//     },
-//     {
-//       new: true,
-//       runValidators: true,
-//     }
-//   )
-//     .then((dbWorkout) => {
-//       res.json(dbWorkout);
-//     })
-//     .catch((err) => {
-//       res.json(err);
-//     });
-// });
-
-// //* createWorkout();
-// router.post("/workouts", ({ body }, res) => {
-//   console.log(body);
-//   db.Workout.create({})
-//     .then((dbWorkout) => {
-//       res.json(dbWorkout);
-//     })
-//     .catch((err) => {
-//       res.json(err);
-//     });
-
-//   res.send("Got a POST request");
-// });
-
-// //* getWorkoutsInRange
-// router.get("/workouts/range", (req, res) => {
-//   db.Workout.find({})
-//     .limit(7)
-//     .then((dbWorkout) => {
-//       res.json(dbWorkout);
-//     })
-//     .catch((err) => {
-//       res.json(err);
-//     });
-// });
+const update = (req, res) => {
+  Workout.findByIdAndUpdate(
+    req.params.id,
+    { $push: { exercises: req.body } },
+    { new: true, runValidators: true }
+  )
+    .then((data) => goodResponse(data, res))
+    .catch((err) => badResponse(err, res));
+};
 
 router.route("/workouts").get(findAll).post(create);
+router.route("/workouts/:id").put(update);
 
+router.route("/workouts/range").get(findAll);
 module.exports = router;
