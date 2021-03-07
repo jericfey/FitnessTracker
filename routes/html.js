@@ -16,9 +16,9 @@ router.get("/exercise", function (req, res) {
 });
 
 //Page to update exercises
-router.get("/exercise?", function (req, res) {
-  res.sendFile(path.join(__dirname, "../public/exercise.html"));
-});
+// router.get("/exercise?", function (req, res) {
+//   res.sendFile(path.join(__dirname, "../public/exercise.html"));
+// });
 
 //Page to display stats
 router.get("/stats", (req, res) => {
