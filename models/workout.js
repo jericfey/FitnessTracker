@@ -33,6 +33,9 @@ const WorkoutSchema = new Schema(
         sets: {
           type: Number,
         },
+        distance: {
+          type: Number,
+        },
       },
     ],
   },
@@ -40,12 +43,10 @@ const WorkoutSchema = new Schema(
 );
 
 //Workout duration total requires virtual type constructor for duration attribute calculation
-WorkoutSchema.virtual("totalDuration").get(() => {
-  let totalDuration = 0;
-  this.exercises.forEach((exercise) => {
-    totalDuration += exercise.duration;
-  });
-  return totalDuration;
+WorkoutSchema.virtual("totalDuration").get(function () {
+  return this.exercises.reduce((total, exercise) => {
+    return total + exercise.duration;
+  }, 0);
 });
 
 const Workout = mongoose.model("Workout", WorkoutSchema);
