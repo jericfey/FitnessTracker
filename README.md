@@ -1,10 +1,10 @@
 # FitnessTracker
 
-Personal Fitness tracker that allows the user to create and display completed fitness activities. 
+Personal Fitness tracker that allows the user to create and display completed fitness activities.
 
 ## Description
 
-This project uses Mongoose, Express and Morgan for logging. 
+This project uses Mongoose, Express and Morgan for logging.
 
 ## Table of Contents
 
@@ -25,16 +25,19 @@ This project uses Mongoose, Express and Morgan for logging.
 
 ## Installation
 
-If you clone the repository and run
+If you clone the repository and run:
 
 > npm i
 
-all required npm packages will be installed. Once installation is complete then start the application with
+all required npm packages will be installed. Once installation is complete then start the application with:
 
 > nodemon start
 
-## Usage
+To seed the database, MongoDB needs to be running and accessible then use the following command:
 
+> npm run seed
+
+## Usage
 
 ## Deployment
 
