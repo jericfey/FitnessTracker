@@ -13,7 +13,6 @@ This project uses Mongoose, Express and Morgan for logging.
 - [Usage](#usage)
 - [Deployment](#Deployment)
 - [Functionality](#Functionality)
-- [License](#license)
 - [Contributing](#Contributing)
 - [Questions](#Questions)
 
@@ -39,15 +38,13 @@ To seed the database, MongoDB needs to be running and accessible then use the fo
 
 ## Usage
 
+User has ability to add 2 types of workout activities including Cardio or Resistance training. The Stats page displayes the last 7 days of workouts in graph format.
+
 ## Deployment
 
 Heroku: https://obscure-tundra-84475.herokuapp.com/
 
 ![Fitness Tracker](./public/images/Picture1.png)
-
-## License
-
-MIT - A short, permissive software license. Basically, you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source. There are many variations of this license in use.
 
 ## Badges
 
