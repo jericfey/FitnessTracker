@@ -41,9 +41,9 @@ To seed the database, MongoDB needs to be running and accessible then use the fo
 
 ## Deployment
 
-Heroku: https://enigmatic-bastion-47766.herokuapp.com/
+Heroku: https://obscure-tundra-84475.herokuapp.com/
 
-![React Portfolio](./client/src/assets/images/ReactPortfolio.png)
+![Fitness Tracker](./public/images/Picture1.png)
 
 ## License
 
